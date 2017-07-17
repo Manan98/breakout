@@ -201,17 +201,8 @@ class Play(object):
             if self._ball.left<=0:
                 self._ball._vx=(-self._ball._vx)
                 
-    # ADD ANY ADDITIONAL METHODS (FULLY SPECIFIED) HERE
+    # ADD ANY ADDITIONAL METHODS (FULLY SPECIFIED) HER
     
-    def no_of_bricks(self):
-        """Returns number of bricks left on screen
-        """
-        i=0
-        for x in self._bricks:
-            i+=1
-        return i
-            
-
     def change_color(self):
         """For each color, if all bricks of that color
         are gone, then the ball's color changes to the color
@@ -226,8 +217,4 @@ class Play(object):
         for x in self._bricks:
             if x.fillcolor not in colors:
                 self._ball.fillcolor=x.fillcolor
-                #self._ball._vx-=(self._brickno-Play.no_of_bricks(self))*0.1
-                #self._ball._vx+=(self._brickno-Play.no_of_bricks(self))*0.1
-                #self._ball._vy-=(self._brickno-Play.no_of_bricks(self))*0.1
-                #self._ball._vy+=(self._brickno-Play.no_of_bricks(self))*0.1
 
